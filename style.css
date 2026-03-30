@@ -8,7 +8,6 @@ body {
   background-size: cover;
   /* Primary Text Color - Warm Aged Paper */
   color: #f0e68c; 
-  /* Recommended fonts for a steampunk feel. You may need to load them to use them. */
   /* Fallback: slab-serif, then generic serif */
   font-family: 'IM Fell DW Pica', serif, 'Courier New', Courier, monospace;
   font-weight: bold; 
