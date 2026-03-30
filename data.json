@@ -21,18 +21,19 @@
       "affiliation": "Skywhale Command",
       "image": "image/rascal.png"
     },
-     {
+    {
       "name": "Sol Felinis",
       "species": "Feline",
       "role": "Skywhale Commanding Officer, 1st Mate",
       "affiliation": "Skywhale Command",
       "image": "image/sol.png"
-    }
-     {
+    },
+    {
       "name": "The Skywhale",
-      "role": "Crew transport and residence"
+      "species": "Vessel",
+      "role": "Crew transport and residence",
       "affiliation": "Lupinaris Fleet Command Ship",
-      "image": "image/ skywhale.png"
+      "image": "image/skywhale.png"
     }
   ]
 }
