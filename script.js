@@ -41,4 +41,4 @@ $(document).ready(function () {
   }).fail(function() {
     console.error("Error: Could not load data.json. Check for syntax errors!");
   });
-});
+
