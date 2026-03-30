@@ -16,12 +16,14 @@ $(document).ready(function () {
       `;
     });
 
+    // Inject the HTML into the gallery
     $("#gallery").html(output);
 
-    // Apply your glow plugin
+    // Apply your custom glow plugin
     $(".card").steamGlow();
 
     // --- LIGHTBOX LOGIC ---
+    // This allows clicking images to see them full-screen
     $(".dossier-img").on("click", function () {
       const imgSrc = $(this).attr("src");
       const charName = $(this).closest(".card").data("name");
@@ -37,14 +39,6 @@ $(document).ready(function () {
     });
 
   }).fail(function() {
-    console.error("Error: Could not load data.json. Check for syntax errors/commas!");
+    console.error("Error: Could not load data.json. Check for syntax errors!");
   });
-});
-    $("#gallery").html(output);
-
-    // Apply plugin
-    $(".card").steamGlow();
-
-  });
-
 });
