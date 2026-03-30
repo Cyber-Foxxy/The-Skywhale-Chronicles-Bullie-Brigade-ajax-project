@@ -16,14 +16,12 @@ $(document).ready(function () {
       `;
     });
 
-    // Inject the HTML into the gallery
     $("#gallery").html(output);
 
-    // Apply your custom glow plugin
+    // Apply your glow plugin
     $(".card").steamGlow();
 
     // --- LIGHTBOX LOGIC ---
-    // This allows clicking images to see them full-screen
     $(".dossier-img").on("click", function () {
       const imgSrc = $(this).attr("src");
       const charName = $(this).closest(".card").data("name");
@@ -33,12 +31,12 @@ $(document).ready(function () {
       $("#image-modal").fadeIn(300).css("display", "flex");
     });
 
-    // Close modal when clicking 'X' or the background
+    // Close modal
     $(".close-modal, #image-modal").on("click", function () {
       $("#image-modal").fadeOut(300);
     });
 
   }).fail(function() {
-    console.error("Error: Could not load data.json. Check for syntax errors!");
+    console.error("The JSON file failed to load. Please check for duplicate code in data.json!");
   });
-
+});
