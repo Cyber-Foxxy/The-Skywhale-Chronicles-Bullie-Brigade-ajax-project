@@ -1,4 +1,66 @@
-/* Modal Background */
+/* General Page Styling */
+body {
+  background-color: #0a0a0a; /* Deep black background */
+  color: #00ff00; /* Terminal Green text */
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+  margin-bottom: 30px;
+}
+
+/* Gallery Grid Layout */
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Character Card Styling */
+.card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  width: 250px; /* This keeps the cards a uniform size */
+  padding: 15px;
+  overflow: hidden;
+  text-align: left;
+}
+
+/* FIX: This makes the images fit inside the cards */
+.dossier-img {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Crops image to fill the box without stretching */
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #00ff00;
+}
+
+.info h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #ffaa00; /* Gold color for names */
+}
+
+.info p {
+  font-size: 0.85rem;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.info span {
+  color: #888;
+  font-weight: bold;
+}
+
+/* --- Modal / Lightbox Styling --- */
 .modal {
   display: none; 
   position: fixed;
@@ -13,41 +75,25 @@
   flex-direction: column;
 }
 
-/* The Full-Size Image */
 .modal-content {
   max-width: 80%;
   max-height: 80%;
-  border: 2px solid #00ff00; /* Terminal Green Border */
-  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+  border: 2px solid #ffaa00;
+  box-shadow: 0 0 30px rgba(255, 170, 0, 0.4);
 }
 
-/* Caption Text */
 #caption {
   margin-top: 15px;
-  color: #00ff00;
-  font-family: 'Courier New', Courier, monospace;
+  color: #ffaa00;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
 
-/* Close Button */
 .close-modal {
   position: absolute;
   top: 20px;
   right: 35px;
-  color: #00ff00;
+  color: #fff;
   font-size: 40px;
-  font-weight: bold;
   cursor: pointer;
-}
-
-/* Hover effect for clickable images */
-.dossier-img {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.dossier-img:hover {
-  opacity: 0.8;
-  filter: brightness(1.2);
 }
