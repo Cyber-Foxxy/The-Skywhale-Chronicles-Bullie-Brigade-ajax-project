@@ -1,0 +1,25 @@
+{
+  "characters": [
+    {
+      "name": "Moose Hills",
+      "species": "Rednose Pitbull",
+      "role": "Ancient Civilization Expert",
+      "affiliation": "Skywhale Crew",
+      "image": "images/moose.jpg"
+    },
+    {
+      "name": "Zephyr Hills",
+      "species": "Bluenose Pitbull",
+      "role": "Ace Pilot",
+      "affiliation": "Skywhale Crew",
+      "image": "images/zephyr.jpg"
+    },
+    {
+      "name": "Captain Rascal Felinis",
+      "species": "Feline",
+      "role": "Skywhale Captain",
+      "affiliation": "Skywhale Command",
+      "image": "images/rascal.jpg"
+    }
+  ]
+}
