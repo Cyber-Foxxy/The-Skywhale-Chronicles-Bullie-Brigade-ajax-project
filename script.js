@@ -35,11 +35,11 @@ $(document).ready(function () {
     $(".close-modal, #image-modal").on("click", function () {
       $("#image-modal").fadeOut(300);
     });
+
   }).fail(function() {
     console.error("Error: Could not load data.json. Check for syntax errors/commas!");
   });
 });
-
     $("#gallery").html(output);
 
     // Apply plugin
