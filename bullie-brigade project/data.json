@@ -5,14 +5,14 @@
       "species": "Rednose Pitbull",
       "role": "Ancient Civilization Expert",
       "affiliation": "Skywhale Crew",
-      "image": "image/moose.jpg"
+      "image": "image/moose.png"
     },
     {
       "name": "Zephyr Hills",
       "species": "Bluenose Pitbull",
       "role": "Ace Pilot",
       "affiliation": "Skywhale Crew",
-      "image": "image/zephyr.jpg"
+      "image": "image/zephyr.png"
     },
     {
       "name": "Captain Rascal Felinis",
@@ -27,5 +27,10 @@
       "role": "Skywhale Chief Officer",
       "affiliation": "Skywhale Chain of Command",
       "image": "image/sol.png"
+    },
+ {
+      "name": "The Sky Whale"
+      "role": "The Ancient Battle Mech, Crew's small city in the sky",
+      "affiliation": "Part of The Lupinaris Fleet"
+      "image": "image/skywhale.png"
     }
-}
